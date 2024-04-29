@@ -1,0 +1,81 @@
+ * {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_1280.jpg);
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+.searchvalue::placeholder{
+    text-align: center;
+}
+
+.input input {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%; 
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.degree {
+    color: black;
+    margin-top: 5px;
+}
+
+.degree h1 {
+    font-size: 50px;
+}
+
+.box12,
+.box34 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    color: white;
+    background: linear-gradient(black, transparent);
+    text-align: start;
+    margin: 10px;
+    width: calc(50% - 20px);
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .body {
+        margin: 10px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 100%;
+        max-width: none;
+    }
+}
+
